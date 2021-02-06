@@ -1,4 +1,4 @@
-learning_titanic
+learning
 ==============================
 
 First steps into Data Scince with Titanic Dataset
