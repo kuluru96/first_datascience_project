@@ -14,7 +14,7 @@ with open(api_file_path) as f:
     os.environ["KAGGLE_KEY"] = kaggle_token['key']
 
 
-from kaggle.api.kaggle_api_extended import KaggleApi
+#from kaggle.api.kaggle_api_extended import KaggleApi
 
 def main(project_dir):
     '''
@@ -32,10 +32,10 @@ def main(project_dir):
     raw_data_path = os.path.join(project_dir,'data','raw')
     
     # extract data
-    api = KaggleApi()
-    api.authenticate()
-    api.competition_download_file(competition='titanic', file_name=train_file_name, path=raw_data_path, force=True)
-    api.competition_download_file(competition='titanic', file_name=test_file_name, path=raw_data_path, force=True)
+ #   api = KaggleApi()
+    #api.authenticate()
+    #api.competition_download_file(competition='titanic', file_name=train_file_name, path=raw_data_path, force=True)
+    #api.competition_download_file(competition='titanic', file_name=test_file_name, path=raw_data_path, force=True)
     logger.info('downloaded raw training and test data')
 
 
